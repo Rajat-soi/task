@@ -1,13 +1,193 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container{
+    
+    width: 90vw;
+    margin: auto;
+}
+body{
+    background-color:#7b9c8e ;
+}
+.header {
+    text-align: center;
+    font-family: cursive;
+    font-size: 2rem;
+    
+}
+.header > h1 {
+    margin: 1.5rem;
+    font-family: cursive;
+}
+.addTaskForm{
+    max-height: 35vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.addTaskForm > div{
+    padding: 15px;
+    display: flexbox;
+    justify-content: space-around;
+
 }
+
+
+label{
+    display:block;
+    padding-top: 5px;
+
+
+    
+}
+
+input{
+    
+    height: 25px;
+    margin-left: 10px;
+    width: 60%;
+}
+
+.taskInput{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.priority> label{
+    display: inline-block;
+}
+.priority{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.chips{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+
+}
+
+
+.task{
+   width:max-content;
+   display:flex;
+   padding: 10px;
+   justify-content: space-between;
+   margin: 10px;
+   border-radius: 10px;
+
+
+   
+}
+
+
+
+.showTask, .complete, .addTaskForm {
+    background-color: rgb(169, 169, 204, 0.70);
+    height: 35vh;
+    overflow: auto;
+    
+    
+}
+
+h1 {
+   margin-top: 0px;
+   margin-bottom: 5px;
+   align-items: center;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 35px;
+    margin-left: 0px;
+}
+
+.taskText{
+    float: left;
+}
+
+.icons{
+    float: right;
+    display: grid;
+    margin-right: -5px;
+    margin-left: 10px;
+
+}
+
+div > h3, div> p, h3 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 1px;
+    
+}
+h1, h3{
+    text-align: center;
+    text-shadow: 2px;
+    font-style: oblique;
+    font-family: sans-serif;
+    text-decoration-color: chocolate;
+    padding-top: 10px;
+}
+.card, .card1{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* From cssbuttons.io by @adamgiebl */
+button{
+    width: 90%;
+    margin: 1.5rem auto;
+}
+.cssbuttons-io-button {
+    background: #799c98;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+   }
+   
+   .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+   }
+   
+   .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+   }
+   
+   .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+   }
+   
+   .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+   }
+   
+   .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+   }
+   

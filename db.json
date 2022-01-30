@@ -1,0 +1,60 @@
+{
+  "tasks": [
+    {
+      "text": "Rajat",
+      "time": "2022-01-26",
+      "priority": "High",
+      "status": false,
+      "id": 1
+    },
+    {
+      "text": "Go to Doctor",
+      "time": "2022-01-27",
+      "priority": "High",
+      "status": true,
+      "id": 2
+    },
+    {
+      "text": "Groceries",
+      "time": "2022-01-27",
+      "priority": "Medium",
+      "status": true,
+      "id": 3
+    },
+    {
+      "text": "Exercise",
+      "time": "2022-01-27",
+      "priority": "Medium",
+      "status": false,
+      "id": 4
+    },
+    {
+      "text": "Party",
+      "time": "2022-01-28",
+      "priority": "Low",
+      "status": true,
+      "id": 5
+    },
+    {
+      "text": "Cleaning",
+      "time": "2022-01-28",
+      "priority": "Medium",
+      "status": false,
+      "id": 6
+    },
+    {
+      "text": "Walk",
+      "time": "2022-01-27",
+      "priority": "Low",
+      "status": false,
+      "id": 7
+    },
+    {
+      "text": "Rajat",
+      "time": "2022-01-29",
+      "priority": "High",
+      "status": false,
+      "id": 8
+    }
+  ]
+}
