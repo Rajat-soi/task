@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import AddTask from './AddTask';
 import Header from './Header';
 import { Grid } from '@material-ui/core';
@@ -16,61 +16,24 @@ const App = () => {
   // Add Task
   const addTask = async (task) => {
    
-    task.status = status
-    const res = await fetch('http://localhost:3002/tasks', {
-      method: 'POST',
-      headers: {
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify(task),
-    })
-
-    const data = await res.json()
-
-    settasks([...tasks, data])
+    task.status = status;
+    task.id= tasks.length +1;
+    settasks([...tasks, task]);
     
+   
   
-  
-  
-}
-//Fetch task
-useEffect(() => {
-  const getTasks = async () => {
-    const taskfromServer = await fetchTasks()
-    settasks(taskfromServer)
-  
-  }
-    getTasks();
-}, [])
-
-const fetchTasks = async() =>{
-  const res = await fetch('http://localhost:3002/tasks')
-  const data = await res.json()
-  return data
-}
-
-const fetchTask = async(id) =>{
- const res = await fetch(`http://localhost:3002/tasks/${id}`)
- const data = await res.json()
-  return data
 }
 
 
 //delete Task
-const deleteTask = async(id) =>{
- await fetch(`http://localhost:3002/tasks/${id}`,{ method: 'DELETE',})
+const deleteTask = (id) =>{
 settasks(tasks.filter((task)=> task.id !== id ))
 }
 
 
 // toggle task status
-const toggleStatus = async (id)=>{
-  const taskToToggle = await fetchTask(id)
-  const update = {...taskToToggle, status: !taskToToggle.status}
-  const res = await fetch(`http://localhost:3002/tasks/${id}`, 
-  {method :'PUT', headers:{'content-type': 'application/json',},body: JSON.stringify(update), })
-  const data = await res.json()
-  settasks(tasks.map((task)=> task.id === id ? {...task, status : data.status} : task))}
+const toggleStatus =(id)=>{
+  settasks(tasks.map((task)=> task.id === id ? {...task, status : !task.status} : task))}
 
   
 
