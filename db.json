@@ -25,7 +25,7 @@
       "text": "Exercise",
       "time": "2022-01-27",
       "priority": "Medium",
-      "status": false,
+      "status": true,
       "id": 4
     },
     {
@@ -55,6 +55,13 @@
       "priority": "High",
       "status": true,
       "id": 8
+    },
+    {
+      "text": "Party",
+      "time": "2022-02-02",
+      "priority": "Low",
+      "status": true,
+      "id": 9
     }
   ]
 }

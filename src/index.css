@@ -156,6 +156,7 @@ button{
     position: relative;
     height: 2.8em;
     padding-right: 3.3em;
+    
    }
    
    .cssbuttons-io-button .icon {
@@ -171,6 +172,7 @@ button{
     box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
     right: 0.3em;
     transition: all 0.3s;
+    margin-top: -1.5em;
    }
    
    .cssbuttons-io-button:hover .icon {
